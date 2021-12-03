@@ -36,7 +36,7 @@ string CalculateOxygen(IEnumerable<string> input, int index, bool takeBigger)
     else
         returnGroup = group0.Count <= group1.Count ? group0 : group1;
 
-    if (returnGroup.Count == 1)
+    if (returnGroup.Count == 1 || index == 12)
         return returnGroup[0];
 
     return CalculateOxygen(returnGroup, index + 1, takeBigger);
