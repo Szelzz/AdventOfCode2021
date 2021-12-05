@@ -24,13 +24,26 @@ foreach (var line in File.ReadLines("input.txt").Skip(2))
     }
 }
 
+// foreach (var number in numbers)
+// {
+//     foreach (var board in boards)
+//     {
+//         if(board.NextNumber(number)){
+//             System.Console.WriteLine("Part 1: {0}", board.CalculateSum() * number);
+//             return;
+//         }
+//     }
+// }
+
+// Part Two
+var boardsOrdered = new List<Board>();
 foreach (var number in numbers)
 {
     foreach (var board in boards)
     {
-        if(board.NextNumber(number)){
-            System.Console.WriteLine("Part 1: {0}", board.CalculateSum() * number);
-            return;
+        if (board.NextNumber(number))
+        {
+            System.Console.WriteLine("Part 2: {0}", board.CalculateSum() * number);
         }
     }
 }

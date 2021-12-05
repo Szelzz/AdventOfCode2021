@@ -4,6 +4,7 @@ class Board
     private int[] rowScore = new int[5];
     private int[] colScore = new int[5];
 
+    private bool BINGO = false;
     public Board(int[,] grid)
     {
         this.grid = grid;
@@ -11,6 +12,8 @@ class Board
 
     public bool NextNumber(int number)
     {
+        if (BINGO)
+            return false;
         for (int r = 0; r < 5; r++)
         {
             for (int c = 0; c < 5; c++)
@@ -22,7 +25,7 @@ class Board
                     grid[r, c] = -1; // mark number
                     if (rowScore[r] == 5 || colScore[c] == 5)
                     {
-                        // BINGO
+                        BINGO = true;
                         return true;
                     }
                 }
