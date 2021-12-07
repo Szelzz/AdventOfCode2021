@@ -15,11 +15,3 @@ var points2 = vents.SelectMany(v => v.GetAllPoints(false))
     .GroupBy(v => v).Where(g => g.Count() > 1);
 
 Console.WriteLine("Part 2: {0}", points2.Count());
-
-Console.WriteLine(vents.Where(v => !v.IsLine).Skip(1).First());
-Console.WriteLine(vents.Where(v => !v.IsLine).Skip(1).First().Point1);
-Console.WriteLine(vents.Where(v => !v.IsLine).Skip(1).First().Point2);
-foreach (var point in vents.Where(v => !v.IsLine).Skip(1).First().GetAllPoints(false))
-{
-    Console.WriteLine(point);
-}
