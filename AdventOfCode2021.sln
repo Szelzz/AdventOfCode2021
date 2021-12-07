@@ -1,27 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day01", "Day01\Day01.csproj", "{54B4CF00-A4C1-405B-AD8F-3722E703BEB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day01", "Day01\Day01.csproj", "{54B4CF00-A4C1-405B-AD8F-3722E703BEB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day02", "Day02\Day02.csproj", "{4820B1B9-FA63-4EFD-8E4F-0CF8B130E831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02", "Day02\Day02.csproj", "{4820B1B9-FA63-4EFD-8E4F-0CF8B130E831}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day03", "Day03\day03.csproj", "{FAC6E848-FCE9-4247-8942-C6086F2E7962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "day03", "Day03\day03.csproj", "{FAC6E848-FCE9-4247-8942-C6086F2E7962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day04", "Day04\Day04.csproj", "{31D52E24-2492-459C-ACC5-703196A519A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day04", "Day04\Day04.csproj", "{31D52E24-2492-459C-ACC5-703196A519A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day05", "Day05\Day05.csproj", "{1AB8B1D1-6AF3-4CF9-8663-7795DE9935D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day05", "Day05\Day05.csproj", "{1AB8B1D1-6AF3-4CF9-8663-7795DE9935D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day06", "Day06\Day06.csproj", "{371CC07A-2B47-43FB-B23D-CFA6D7AED3C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day06", "Day06\Day06.csproj", "{371CC07A-2B47-43FB-B23D-CFA6D7AED3C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day07", "Day07\Day07\Day07.csproj", "{F8202208-43B7-4BB8-9541-53DAA2F654E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{54B4CF00-A4C1-405B-AD8F-3722E703BEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,5 +47,15 @@ Global
 		{371CC07A-2B47-43FB-B23D-CFA6D7AED3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{371CC07A-2B47-43FB-B23D-CFA6D7AED3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{371CC07A-2B47-43FB-B23D-CFA6D7AED3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8202208-43B7-4BB8-9541-53DAA2F654E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8202208-43B7-4BB8-9541-53DAA2F654E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8202208-43B7-4BB8-9541-53DAA2F654E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8202208-43B7-4BB8-9541-53DAA2F654E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78C4CB7B-8D9C-4636-87FE-80D596BB387A}
 	EndGlobalSection
 EndGlobal
