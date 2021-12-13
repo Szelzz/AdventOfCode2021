@@ -30,3 +30,42 @@ for (int x = 0; x < size; x++)
 }
 
 Console.WriteLine("Part 1: {0}", lowPoints.Select(p => p + 1).Sum());
+
+var points = new List<Point>();
+inputY = 0;
+foreach (var line in File.ReadLines("input.txt"))
+{
+    for (int x = 0; x < size; x++)
+    {
+        var point = new Point(int.Parse(line[x].ToString()), x, inputY);
+        foreach (var oldPoints in points)
+        {
+            oldPoints.LoadPoint(point);
+        }
+        points.Add(point);
+    }
+    inputY++;
+}
+
+var basins = new List<List<Point>>();
+
+
+for (int i = 0; i < points.Count; i++)
+{
+    if (points.Count < i)
+        break;
+
+    var point = points[i];
+    var basin = point.FindBasin();
+    if (basin.Count > 0)
+    {
+        basins.Add(basin);
+        foreach (var basinPoint in basin)
+        {
+            points.Remove(basinPoint);
+        }
+    }
+}
+
+var largest = basins.OrderByDescending(b => b.Count).Take(3);
+Console.WriteLine("Part 2: {0}", largest.Aggregate(1, (agg, basin) => basin.Count * agg));
