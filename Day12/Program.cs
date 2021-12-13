@@ -26,3 +26,7 @@ var allPaths = start.FindEnd() ?? throw new Exception();
 
 
 Console.WriteLine("Part 1: {0}", allPaths.Count);
+
+
+var paths2 = start.FindEnd2() ?? throw new Exception();
+Console.WriteLine("Part 2: {0}", paths2.Count);
