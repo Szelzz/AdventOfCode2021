@@ -35,21 +35,6 @@
                 break;
         }
 
-        var bracketCount = 0;
-        var pointer = 0;
-        foreach (var c in number)
-        {
-            if (c == '[')
-                bracketCount++;
-            else if (c == ']')
-                bracketCount--;
-            else if (c == ',')
-                if (bracketCount == 1)
-                    break;
-
-            pointer++;
-        }
-
         Left = left == '[' ?
             new ComplexNumber(number[1..i], this) : new RegularNumber(left, this);
         Right = right == ']' ?
@@ -145,7 +130,6 @@
         {
             while (toExplode != null)
             {
-                var brackets = this.ToString().Count(c => c == '[');
                 var newLeft = toExplode.FindClosestLeft();
                 if (newLeft != null)
                     newLeft.Value += ((RegularNumber)toExplode.Left).Value;
