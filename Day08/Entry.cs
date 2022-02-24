@@ -139,7 +139,7 @@ class Digit
     {
         return panelsInput.All(p => Panels.Contains(p));
     }
-
+    
     public int Value { get; }
     public string Panels { get; }
 }

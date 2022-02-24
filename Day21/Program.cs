@@ -20,6 +20,36 @@ while (true)
 var looserScore = Math.Min(player1.Score, player2.Score);
 Console.WriteLine("Part 1: {0}", looserScore * dice.RolledCount);
 
+
+// Part 2
+
+
+var result = new List<int>();
+for (int i = 1; i <= 3; i++)
+{
+    for (int j = 1; j <= 3; j++)
+    {
+        for (int k = 1; k <= 3; k++)
+        {
+            result.Add(i + j + k);
+        }
+    }
+}
+Console.WriteLine(result.Count);
+foreach (var r in result.Distinct())
+{
+Console.WriteLine(r);
+}
+
+
+class DiracDice : Dice
+{
+    public override int Roll()
+    {
+        return 1;
+    }
+}
+
 class Player
 {
     public Player(int position)
@@ -46,7 +76,7 @@ class Dice
     public long RolledCount { get; private set; }
 
     int value = 1;
-    public int Roll()
+    public virtual int Roll()
     {
         if (value == 101)
             value = 1;
